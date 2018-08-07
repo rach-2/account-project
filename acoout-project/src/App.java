@@ -5,7 +5,7 @@ public class App {
 	{
 		
 		System.out.println("Hello world to the standred output");
-
-	}
+		
+    }
 
 }
