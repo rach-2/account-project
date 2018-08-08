@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Iterator;
 
 public class Service 
 {
@@ -19,8 +20,20 @@ public class Service
 	    {
 	    	 return acounts.get(accountId);
 	    }
-	    
-	
-	    
-	    
+		public int countAcountsByName(String name) 
+		{
+			   int counter = 0;
+		       Iterator it = acounts.entrySet().iterator();
+		       while (it.hasNext())
+		       {
+		    	   for(Account acount: acounts.values())
+		    	   {
+		    		     if(acount.getFirstName().equals(name));
+		    		     counter++;
+		    	   }
+		    	   break;
+		    	}
+		       
+		       return counter;
+		  }
 }

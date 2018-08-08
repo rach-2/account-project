@@ -10,10 +10,8 @@ public class ServiceJsonCovert {
 		serviceObject = new Service();
 		String  servieJsonString =  gsonConverter.toJson(serviceObject);
 		return servieJsonString;
-	  
 	}
 	
-	 
 	  
 }
 	 
