@@ -9,7 +9,7 @@ public class Account
      {
     	   this.firstName = firstName;
     	   this.lastName =  lastName;
-    	   this.accountNumber = accountNumber; 
+    	   this.accountNumber = accoutNumber; 
      }
      
       public String getFirstName()
@@ -26,6 +26,12 @@ public class Account
       {
     	  return accountNumber;
       }
+      
+      public String toString() {
+    	  
+    	  return this.firstName + " " + this.lastName + " " + this.accountNumber;
+      }
+      
       
       
 }
