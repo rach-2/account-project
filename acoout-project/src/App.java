@@ -14,7 +14,6 @@ public class App {
 	   Gson gsonCovneter = new Gson();
         Account account = new Account("Bob", "Boby","088997090");
 		String jsonCoventer = gsonCovneter.toJson(account);
-
 		System.out.println(jsonCoventer);
 		service.addAccout(account);
 		
