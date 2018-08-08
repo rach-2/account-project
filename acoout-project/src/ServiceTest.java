@@ -23,8 +23,8 @@ public class ServiceTest
     {
     	servive.addAccout(acount1);
     	servive.addAccout(acount2);
-        Assert.assertEquals(2,servive.countAcountsByName("Bobby"));
+        Assert.assertEquals(2,servive.countAcountsByName("Bob"));
    }
     
-  
+     
 }
