@@ -4,6 +4,7 @@ public class Service
 {
 	    private HashMap<Integer, Account> acounts = new HashMap();
 	    private int count = 0;
+	    
 	    public void addAccout(Account acount) 
 	    {
 	    	 this.count++;
@@ -14,9 +15,12 @@ public class Service
 	    	   acounts.remove(accountId);
 	    }
 	    
-	    public Account getAccount(Integer accountId)
+	    public Account getAccountId(Integer accountId)
 	    {
 	    	 return acounts.get(accountId);
 	    }
+	    
+	
+	    
 	    
 }
