@@ -29,10 +29,10 @@ public class Service
 		       {
 		    	   for(Account acount: acounts.values())
 		    	   {
-		    		     if(acount.getFirstName().equals(name));
-		    		     numberOfAcountsByGivenName++;
+		    		   if(acount.getFirstName().equals(name));
+		    		   numberOfAcountsByGivenName++;
 		    	   }
-		    	   break;
+		    	    break;
 		    	}
 		          return numberOfAcountsByGivenName;
 		  }

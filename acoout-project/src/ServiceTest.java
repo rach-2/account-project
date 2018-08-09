@@ -14,19 +14,18 @@ public class ServiceTest
 		servive = new Service(); 
 		acount1 = new Account("Bob", "Booby", "008978870");
 	    acount2 = new Account("Bob", "Bobby", "0998990");
-	    acount3 = new Account("Greg", "greggy", "008897");
-		
+	    acount3 = new Account("Greg", "greggy", "008897");	
 	}
-   
+	
     @Test
     public void countAcountsByNameTest()
     {
     	servive.addAccout(acount1);
     	servive.addAccout(acount2);
         Assert.assertEquals(2,servive.countAcountsByName("Bob"));
-   }
+    }
+  }
     
     
     
      
-}
