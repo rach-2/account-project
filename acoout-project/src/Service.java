@@ -23,17 +23,17 @@ public class Service
 	    }
 		public int countAcountsByName(String name) 
 		{
-			   int numberOfAcountsByGivenName = 0;
+		       int numberOfAcountsByGivenName = 0;
 		       Iterator<Entry<Integer, Account>> accountIterator = acounts.entrySet().iterator();
 		       while (accountIterator.hasNext())
 		       {
 		    	   for(Account acount: acounts.values())
 		    	   {
-		    		   if(acount.getFirstName().equals(name));
-		    		   numberOfAcountsByGivenName++;
+		    		if(acount.getFirstName().equals(name));
+		    		numberOfAcountsByGivenName++;
 		    	   }
 		    	       break;
 		    	}
-		        return numberOfAcountsByGivenName;
+		         return numberOfAcountsByGivenName;
 		  }
 }
