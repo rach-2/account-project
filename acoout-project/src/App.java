@@ -1,14 +1,23 @@
+import java.io.IOException;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonIOException;
 
 public class App {
 
 	public static void main(String[] args) 
 	{
+
 		
 		System.out.println("Hello world to the standred output");
-		Account account = new Account("Bob", "Boby","088997090");
 		Service service =  new Service();
-	    service.addAccout(account);
-	    System.out.println(service.getAccount(1));
-  }
-
+	    Gson gsonCovneter = new Gson();
+        Account account = new Account("Bob", "Boby","088997090");
+		String jsonCoventer = gsonCovneter.toJson(account);
+		System.out.println(jsonCoventer);
+		service.addAccout(account);
+		
+		
+	}
+	
 }
